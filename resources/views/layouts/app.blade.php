@@ -43,7 +43,7 @@
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('create-category')}}">Creat Category</a>
-                        <a class="dropdown-item" href="#">All Categories</a>
+                        <a class="dropdown-item" href="{{route('index-categories')}}">All Categories</a>
                       </div>
                     </li>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

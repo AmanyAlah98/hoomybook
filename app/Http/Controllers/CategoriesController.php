@@ -33,5 +33,23 @@ class CategoriesController extends Controller
         return view('admin.categories.edit', compact('category'));
 
    }
+   
+    public function update($id , Request $request){
+        $category = Category::find($id);
+        if(isset($request->name)){
+            $category->name = $request->name;            
+        }
+        $category->save();
+        return redirect()->route('index-categories');
+    }
+
+    public function delete($id){
+
+        $category = Category::find($id);
+        $category->delete();
+        return redirect()->route('index-categories');
+
+        
+    }
 
 }
