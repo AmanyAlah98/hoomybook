@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <div class="containe text-center">
-	 <h2>Create Category</h2>
+	 <h2>Update Category</h2>
   </div>
 <form action="/categories/create" method="POST">
 	@csrf
